@@ -12,6 +12,138 @@
   </head>
   <body>
     <h1>HTML Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="surname">
+          Surname:
+          <input 
+            type="text" 
+            id="surname"
+            autocomplete="off"
+          >
+        </label>
+
+        <label for="name" >
+          Name:
+          <input 
+            type="text" 
+            id="name"
+            autocomplete="off"
+          >
+        </label>
+
+        <label for="howOld">
+          How old are You?
+          <input 
+            type="number" 
+            id="howOld"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </label>
+
+        <label for="date">
+          Full date of birth:
+          <input type="date" id="date">
+        </label>
+
+        <label for="termOfAgreement">
+          I accept the term of the agreement
+          <input type="checkbox" id="termOfAgreement">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <label for="email">
+          E-mail
+          <input 
+            autocomplete="off"
+            id="email"
+            type="email"
+            placeholder="email@example.com"
+          >
+        </label>
+
+        <label for="password">
+          Password:
+          <input 
+            autocomplete="off"
+            id="password"
+            type="password"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <label>
+          Do you love cats?
+          <input 
+          name="cats"
+          type="radio"
+          >Yes
+          <input 
+            name="cats"
+            type="radio"
+          >No
+        </label>
+
+        <label>
+          What is your favorite color?
+          <input type="color">
+        </label>
+
+        <label>
+          What time do you go to bed?
+          <input type="time">
+        </label>
+
+        <label>
+          What are your favorite brand of car?
+          <select multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+
+        <label>
+          How do you rate our work?
+          <input type="range" value="0">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <label>
+          Comments:
+          <textarea
+            autocomplete="off"
+            cols="20" 
+            rows="3"
+            minlength="3"
+            mmaxlength="100"
+         ></textarea>
+        </label>
+
+        <label>
+          Would you recommend us?
+          <select required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
