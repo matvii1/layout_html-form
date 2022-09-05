@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,MACE,aAAc,CACd,kBACF,CAEA,SACE,kBACF","file":"style.f11a3d1f.css","sourceRoot":"../src","sourcesContent":["label {\n  display: block;\n  margin-bottom: 10px;\n}\n\nfieldset {\n  margin-bottom: 20px;\n}\n"]}
